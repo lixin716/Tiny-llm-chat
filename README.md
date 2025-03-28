@@ -72,35 +72,35 @@
 ### 后端整体架构如下：
 
 >backend/
->
+
 >├── main.go                 # 应用程序入口
->
+
 >├── config/                 # 配置文件和配置处理
->
+
 >├── internal/               # 内部包
->
+
 >│   ├── api/                # API 处理程序
->
+
 >│   │   ├── handlers/       # HTTP 处理程序
->
+
 >│   │   ├── middleware/     # HTTP 中间件
->
+
 >│   ├── model/              # 模型服务通信
->
+
 >│   │   ├── client.go       # gRPC 客户端
->
+
 >│   │   └── proto/          # Proto 文件和生成的 Go 代码
->
+
 >│   ├── service/            # 业务逻辑层
->
+
 >│   └── storage/            # 数据存储层
->
+
 >├── pkg/                    # 公共包
->
+
 >│   ├── cache/              # Redis 缓存
->
+
 >│   └── db/                 # 数据库连接
->
+
 >└── go.mod                  # Go 模块文件
 
 
