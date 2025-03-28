@@ -1,6 +1,6 @@
 # Tiny-llm-chat
 
-# Chat Llama
+# Chat llama
 
 一个简单的AI聊天应用，提供类似ChatGPT的用户体验，支持多会话管理、实时响应和美观的蓝白主题界面。
 
