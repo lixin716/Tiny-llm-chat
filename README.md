@@ -39,7 +39,8 @@
 ### 模型服务器启动
 进入model_api文件夹,启动模型服务（确保需要的依赖都已安装）
 >cd model/model_api  
->python grpc_server.py  
+>python grpc_server.py
+
 启动成功会显示模型加载成功，正在监听端口xxx
 
 ### 后端服务启动
