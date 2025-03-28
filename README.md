@@ -47,14 +47,22 @@
 ### 后端服务启动
 首先确保已经更改配置为自己的，然后启动redis和mysql，最后启动后端服务
 >redis-server
+
 >cd backend
+
 >go mod tidy
+
 >go run main.go
+
 启动成功会显示
->服务加载成功，http://localhost:xxxx
+
+>服务加载成功！http://localhost:xxxx
 
 ### 前端启动
 >cd site
+
 >npm install
+
 >npm start
+
 之后会自动打开浏览器相应端口，服务正常启动
