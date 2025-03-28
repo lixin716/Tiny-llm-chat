@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package llm;
+option go_package = "backend/internal/model/proto";
+
+// 首先定义消息类型
+message GenerateRequest {
+  string prompt = 1;
+  float temperature = 2;
+  int32 max_new_tokens = 3;
+  int32 top_k = 4;
+}
+
+message GenerateResponse {
+  string response = 1;
+}
+
+// 然后定义服务，使用不同的方法名
+service LLMService {
+  rpc Generate (GenerateRequest) returns (GenerateResponse) {}
+} 
