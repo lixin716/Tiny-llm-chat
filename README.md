@@ -34,8 +34,26 @@
 
 ## 快速开始
 
-首先把项目clone到本地
+首先把项目clone到本地,然后在backend/config/config.yaml中更改自己的配置
 
 ### 模型服务器启动
->cd backend
+进入model_api文件夹,启动模型服务（确保需要的依赖都已安装）
+>cd model/model_api
+>python grpc_server.py
+启动成功会显示
+>模型加载成功，正在监听端口xxx
 
+### 后端服务启动
+首先确保已经更改配置为自己的，然后启动redis和mysql，最后启动后端服务
+>redis-server
+>cd backend
+>go mod tidy
+>go run main.go
+启动成功会显示
+>服务加载成功，http://localhost:xxxx
+
+### 前端启动
+>cd site
+>npm install
+>npm start
+之后会自动打开浏览器相应端口，服务正常启动
